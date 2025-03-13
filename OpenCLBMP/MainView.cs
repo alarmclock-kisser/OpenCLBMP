@@ -6,6 +6,8 @@ namespace OpenCLBMP
 		public string Repopath;
 
 
+		public CLHandling CLH;
+
 
 
 
@@ -28,7 +30,7 @@ namespace OpenCLBMP
 			this.Location = new Point(0, 0);
 
 			// Init. classes
-
+			CLH = new CLHandling(Repopath, listBox_log, comboBox_devices, label_platform, label_ram, progressBar_ram, pictureBox_view);
 
 			// Register events
 
